@@ -1,3 +1,7 @@
+/* UI - Test Cases
+*  SignIn Action - Test case to verify successful sign in to rescale platform.
+*/
+
 package com.rescale.testcases.LoginPage;
 
 import org.testng.annotations.AfterClass;
