@@ -1,3 +1,6 @@
+/* HomePage - List all the FilesPage,
+* - Function, navigate to pages, log out action and excecutable btn actions
+*/
 package com.rescale.pages;
 
 import java.util.concurrent.TimeUnit;
