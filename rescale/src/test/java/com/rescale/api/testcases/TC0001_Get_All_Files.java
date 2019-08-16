@@ -1,3 +1,8 @@
+/* 
+*  FilesPage:  getAllFilesAPI- get api call listing all the files uploaded to remote bucket
+*/
+
+
 package com.rescale.api.testcases;
 
 import java.util.concurrent.TimeUnit;
