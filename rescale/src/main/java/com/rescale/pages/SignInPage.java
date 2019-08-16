@@ -1,3 +1,7 @@
+/* SignInPage - List all the SignInPage,
+* - Functions, navigate to pages, log in action and excecutable btn actions
+*/
+
 package com.rescale.pages;
 
 import org.openqa.selenium.By;
