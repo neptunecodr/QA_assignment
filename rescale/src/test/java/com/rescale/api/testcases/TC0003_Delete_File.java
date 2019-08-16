@@ -1,3 +1,7 @@
+/* 
+*  FilesPage: delete FilesAPI- delete a select file from remote bucket
+*/
+
 package com.rescale.api.testcases;
 
 
