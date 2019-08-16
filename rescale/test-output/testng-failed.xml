@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Test_Suite]">
+  <parameter name="appURL" value="https://platform.rescale.com"/>
+  <parameter name="browserType" value="chrome"/>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="com.rescale.testcases.LoginPage.tc_001_BasePageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="tearDown"/>
+          <include name="initialzeTestBaseSetup"/>
+          <include name="verifyBasePage"/>
+          <include name="endVerifybasePage"/>
+        </methods>
+      </class> <!-- com.rescale.testcases.LoginPage.tc_001_BasePageTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Test_Suite] -->

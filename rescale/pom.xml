@@ -1,0 +1,144 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com</groupId>
+  <artifactId>rescale.qa</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <name>rescale.qa</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	<testng.version>6.14.3</testng.version>
+	<poi.version>3.14</poi.version>
+	<poi-ooxml.version>3.14</poi-ooxml.version>
+	<log4j.version>1.2.17</log4j.version>
+	<!-- <hmlunit-driver.version>2.30.0</htmlunit-driver.version> -->
+	<selenium-java.version>3.11.0</selenium-java.version>
+	<rest-assured.version>3.0.0</rest-assured.version>
+	<json-path.version>3.0.0</json-path.version>
+	<log4j-core.version>2.9.0</log4j-core.version>
+	<log4j-api.version>2.9.0</log4j-api.version>
+	<extentreports.version>4.0.9</extentreports.version>
+	<htmlunit-driver.version>2.34.0</htmlunit-driver.version>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+   </properties>
+	
+	<dependencies>
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+			<version>${selenium-java.version}</version>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi</artifactId>
+			<version>${poi.version}</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml -->
+		<dependency>
+			<groupId>org.apache.poi</groupId>
+			<artifactId>poi-ooxml</artifactId>
+			<version>${poi-ooxml.version}</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/log4j/log4j -->
+		<dependency>
+			<groupId>log4j</groupId>
+			<artifactId>log4j</artifactId>
+			<version>${log4j.version}</version>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/io.rest-assured/rest-assured -->
+		<dependency>
+    		<groupId>io.rest-assured</groupId>
+		    <artifactId>rest-assured</artifactId>
+		    <version>${rest-assured.version}</version>
+		</dependency>
+		
+		<!-- https://mvnrepository.com/artifact/io.rest-assured/json-path -->
+		<dependency>
+		    <groupId>io.rest-assured</groupId>
+		    <artifactId>json-path</artifactId>
+		    <version>${json-path.version}</version>
+		</dependency>		
+		
+	<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/htmlunit-driver -->
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>htmlunit-driver</artifactId>
+			<version>${htmlunit-driver.version}</version>
+		</dependency>
+
+	<!-- https://mvnrepository.com/artifact/org.testng/testng -->
+		<dependency>
+    		<groupId>org.testng</groupId>
+   			<artifactId>testng</artifactId>
+    		<version>${testng.version}</version>
+			</dependency>
+	    <dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-api</artifactId>
+			<version>${log4j-api.version}</version>
+		</dependency>
+	
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-core</artifactId>
+			<version>${log4j-core.version}</version>
+		</dependency>
+
+		<!-- pom.xml -->
+		<dependency>
+			<groupId>com.aventstack</groupId>
+			<artifactId>extentreports</artifactId>
+			<version>${extentreports.version}</version>
+		</dependency>
+
+		<!-- <dependency>
+			<groupId>com.relevantcodes</groupId>
+			<artifactId>extent-reports</artifactId>
+			<version>${extentreports.version}</version>
+		</dependency> --> 
+		
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.12</version>
+			<scope>test</scope>
+		</dependency>
+		
+	</dependencies>
+	<build>
+    <plugins>
+         <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-surefire-plugin</artifactId>
+            <version>2.18.1</version>
+            <configuration>
+                <suiteXmlFiles>
+                <suiteXmlFile>testng.xml</suiteXmlFile>
+                </suiteXmlFiles>
+            </configuration>
+        </plugin>
+        
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>2.5.1</version>
+            <configuration>
+                <source>1.7</source>
+                <target>1.7</target>
+           </configuration>
+        </plugin>
+
+    </plugins>
+</build>
+</project>

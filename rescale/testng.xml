@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Test_Suite">
+<parameter name="appURL" value="https://platform.rescale.com"/>
+<parameter name="browserType" value="chrome"/>
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="com.rescale.testcases.LoginPage.tc_001_BasePageTest"/>
+      <class name="com.rescale.testcases.LoginPage.TC_002_SignInAction"/>
+      <class name="com.rescale.baseSetup.TestBaseSetup"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
