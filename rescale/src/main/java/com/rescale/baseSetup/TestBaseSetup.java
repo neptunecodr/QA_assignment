@@ -1,3 +1,9 @@
+/*
+* TestBaseSetup - List all the reuseable paramters, Before class used for setup for browser selection and URL setup 
+*prior to start of test cases
+*
+*/
+
 package com.rescale.baseSetup;
 
 import org.testng.annotations.AfterMethod;
