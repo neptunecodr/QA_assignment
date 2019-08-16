@@ -1,3 +1,7 @@
+/*
+* Base Page - contains all the base URL page function / action functions
+*/
+
 package com.rescale.pages;
 
 import org.openqa.selenium.WebDriver;
