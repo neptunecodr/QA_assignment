@@ -1,3 +1,7 @@
+/* UI - Test Cases
+*  Upload File - Test case to verify successful file upload for single new file.
+*/
+
 package com.rescale.testcases.FilesPage;
 
 import java.util.concurrent.TimeUnit;
