@@ -1,3 +1,8 @@
+
+/*
+* APITestBase - List al lthe reuseable paramters, Before class used for setup prior to start of test cases
+*/
+
 package com.rescale.baseSetup;
 
 
