@@ -1,3 +1,7 @@
+/* Files Page - List all the FilesPage,
+* - Function, file actions and excecutable btn actions
+*/
+
 package com.rescale.pages;
 
 import java.util.concurrent.TimeUnit;
