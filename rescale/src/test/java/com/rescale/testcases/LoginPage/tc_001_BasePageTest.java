@@ -1,3 +1,7 @@
+/* UI - Test Cases
+*  Base Page - Test case to verify Base page - rescale basel URL
+*/
+
 package com.rescale.testcases.LoginPage;
 
 import org.testng.annotations.AfterClass;
